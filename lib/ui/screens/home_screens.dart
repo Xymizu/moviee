@@ -7,21 +7,21 @@ class HomeScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> sliderImages = [
-      "assets/images/film (1).jpg",
-      "assets/images/film (4).jpg",
-      "assets/images/film (7).jpg",
+      "assets/images/film1.jpg",
+      "assets/images/film4.jpg",
+      "assets/images/film6.jpg",
     ];
 
     final List<String> images = [
-      "assets/images/film (1).jpg",
-      "assets/images/film (2).jpg",
-      "assets/images/film (3).jpg",
-      "assets/images/film (4).jpg",
-      "assets/images/film (5).jpg",
-      "assets/images/film (6).jpg",
-      "assets/images/film (7).jpg",
-      "assets/images/film (8).jpg",
-      "assets/images/film (9).jpg",
+      "assets/images/film1.jpg",
+      "assets/images/film2.jpg",
+      "assets/images/film3.jpg",
+      "assets/images/film4.jpg",
+      "assets/images/film5.jpg",
+      "assets/images/film6.jpg",
+      "assets/images/film7.jpg",
+      "assets/images/film8.jpg",
+      "assets/images/film9.jpg",
     ];
 
     return Scaffold(
@@ -59,7 +59,7 @@ class HomeScreens extends StatelessWidget {
                     cardsCount: sliderImages.length,
                     numberOfCardsDisplayed: 3,
                     backCardOffset: const Offset(0, 40),
-                    cardBuilder: (context, index, _, __) {
+                    cardBuilder: (context, index, _, _) {
                       return ClipRRect(
                         borderRadius: BorderRadius.circular(16),
                         child: Stack(
